@@ -1,4 +1,4 @@
-.content {
+/*.content {
   height: calc(100vh - 132px);
   display: flex;
 }
@@ -34,9 +34,21 @@
   background: teal;
   color: white;
 }
-
+*/
 app-header, app-menu, app-footer {
   height: 1vh;
 }
 
+div {box-sizing: border-box;}
+
+.wrapper > div {
+  border: 1px solid #ffa94d;
+  height: 100%;
+}
+.wrapper {
+  height: calc(100vh - 132px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
 
