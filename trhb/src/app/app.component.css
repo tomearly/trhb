@@ -46,9 +46,10 @@ div {box-sizing: border-box;}
   height: 100%;
 }
 .wrapper {
+  overflow: auto;
   height: calc(100vh - 132px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 
