@@ -1,6 +1,17 @@
 div {
-  background-size: cover;
-  background-image: url('http://lorempixel.com/400/200/technics');
   padding: 10px;
   height: 100%;
+  background: coral;
+}
+
+@media (min-width: 415px) {
+  div {
+    height: calc((100vh - 154px));
+  }
+}
+
+@media (max-width: 414px) {
+  div {
+    height: calc((50vh - 77px));
+  }
 }

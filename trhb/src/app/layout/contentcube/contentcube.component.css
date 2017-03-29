@@ -1,4 +1,17 @@
 div {
   padding: 10px;
   height: 100%;
+  background: teal;
+}
+
+@media (min-width: 415px) {
+  div {
+    height: calc((100vh - 154px));
+  }
+}
+
+@media (max-width: 414px) {
+  div {
+    height: calc((50vh - 94px));
+  }
 }
