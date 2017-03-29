@@ -1,0 +1,42 @@
+.content {
+  height: calc(100vh - 132px);
+  display: flex;
+}
+
+.content > .contentcube-left > app-contentcube {
+   align-items: stretch;
+   float: left;
+   width: 50vw;
+   height: 50%;
+   background: coral;
+   color: white;
+ }
+
+.content > .contentcube-left > app-photocube {
+  align-items: stretch;
+  width: 50vw;
+  height: 50%;
+  float: right;
+}
+
+.content > .contentcube-right > app-photocube {
+  align-items: stretch;
+  float: left;
+  width: 50vw;
+  height: 50%;
+}
+
+.content > .contentcube-right > app-contentcube {
+  align-items: stretch;
+  width: 50vw;
+  height: 50%;
+  float: right;
+  background: teal;
+  color: white;
+}
+
+app-header, app-menu, app-footer {
+  height: 1vh;
+}
+
+

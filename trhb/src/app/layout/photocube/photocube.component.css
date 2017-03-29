@@ -1,0 +1,6 @@
+div {
+  background-size: cover;
+  background-image: url('http://lorempixel.com/400/200/technics');
+  padding: 10px;
+  height: 100%;
+}
