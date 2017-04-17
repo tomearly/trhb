@@ -1,0 +1,12 @@
+<div class="wrapper" *ngIf="innerWidth >= 415">
+  <app-contentcube [count]="5" [backgroundColor]="'orange'" [text]="1"></app-contentcube>
+  <app-contentcube  [backgroundImage]="'http://lorempixel.com/400/200/technics/'" [text]="2"></app-contentcube>
+  <app-contentcube  [count]="2000" [backgroundImage]="'http://lorempixel.com/400/200/technics/'" [text]="4"></app-contentcube>
+  <app-contentcube [backgroundColor]="'teal'" [text]="3" ></app-contentcube>
+</div>
+<div class="wrapper" *ngIf="innerWidth <= 415">
+  <app-contentcube [count]="5" [backgroundColor]="'orange'"></app-contentcube>
+  <app-contentcube  [ngClass]="{parallax : backgroundImage}" [backgroundImage]="'http://lorempixel.com/400/200/technics/'"></app-contentcube>
+  <app-contentcube  [ngClass]="{parallax : backgroundImage}" [backgroundColor]="'teal'"></app-contentcube>
+  <app-contentcube [count]="2000" [backgroundImage]="'http://lorempixel.com/400/200/technics/'"></app-contentcube>
+</div>

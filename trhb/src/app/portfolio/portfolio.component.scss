@@ -1,0 +1,38 @@
+.portfolio-wrapper {
+  padding-left: 20px;
+  overflow: scroll !important;
+}
+
+app-header, app-menu, app-footer {
+  height: 1vh;
+}
+
+div {box-sizing: border-box;}
+
+.portfolio-wrapper > div {
+  height: 100%;
+}
+
+@media (min-width: 415px) {
+  .portfolio-wrapper {
+    overflow: auto;
+    height: calc(100vh - 134px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 414px) {
+  .portfolio-wrapper {
+    overflow: auto;
+    height: calc(100vh - 134px);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.one {
+  background: coral;
+}
