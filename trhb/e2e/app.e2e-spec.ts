@@ -7,8 +7,12 @@ describe('trhb App', () => {
     page = new TrhbPage();
   });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+  it('Can load trhb ltd', () => {
+    expect(page.navigateTo());
   });
+
+  it('Get footer text', () => {
+    page.navigateTo();
+    expect(page.getFooterText()).toContain("Copyright TRHB Ltd");
+  })
 });
