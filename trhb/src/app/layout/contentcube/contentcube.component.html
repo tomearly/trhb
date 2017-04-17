@@ -1,3 +1,5 @@
-<div>
-  contentcube works!
+<div [ngClass]="more" [style.background-size]="'cover'" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}" [style.background-color]="backgroundColor">
+<!--  Count: {{ count }} -
+  <button (click)="increment()">Increment</button>-->
+  {{text}}
 </div>

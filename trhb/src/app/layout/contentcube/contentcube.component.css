@@ -1,17 +1,28 @@
 div {
   padding: 10px;
   height: 100%;
-  background: teal;
 }
 
 @media (min-width: 415px) {
   div {
-    height: calc((100vh - 135px));
+    height: calc((100vh - 155px));
+  }
+  div:after > .bob {
+    position: relative;
+    bottom: -95%;
+    left: 50%;
+    color: white;
+    font-weight: 800;
+    content: 'MORE'
+  }
+
+  .bob:after {
+    content: 'more'
   }
 }
 
 @media (max-width: 414px) {
   div {
-    height: calc((50vh - 54px));
+    height: calc((50vh - 85px));
   }
 }

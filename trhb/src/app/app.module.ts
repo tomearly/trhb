@@ -7,8 +7,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MenuComponent } from './layout/menu/menu.component';
-import { PhotocubeComponent } from './layout/photocube/photocube.component';
 import { ContentcubeComponent } from './layout/contentcube/contentcube.component';
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from "./app-routing/app-routing.module";
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { ContentcubeComponent } from './layout/contentcube/contentcube.component
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    PhotocubeComponent,
-    ContentcubeComponent
+    ContentcubeComponent,
+    HomeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

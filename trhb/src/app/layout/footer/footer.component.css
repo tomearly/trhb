@@ -1,6 +1,9 @@
 div {
-  width: 100%;
+  width: calc(100vw);
   text-align: center;
-  /* 20px high */
   background: white;
+  height: 20px;
+  bottom: 100%;
+  position: fixed;
+  bottom: 0px;
 }
